@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1,
+        #box2,
+        #box3 {
+            height: 300px;
+            width: 33%;
+        }
+        
+        #box1 {
+            background-color: red;
+            float: right;
+        }
+        
+        #box2 {
+            background-color: green;
+            float: left;
+        }
+        
+        #box3 {
+            background-color: blue;
+            float: left;
+        }
+        
+        #container::after {
+            content: "";
+            display: block;
+            /* clear: left; */
+            /* clear: right; */
+            clear: both;
+        }
+        /*         
+        .blank {
+            height: 300px;
+            width: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+    <!-- <div class="blank"></div> -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab possimus aliquid pariatur? Id dolorum autem atque ex asperiores voluptatibus ipsa ullam, architecto eos hic ratione et magnam dolores. Ipsam, doloremque.Voluptas commodi aspernatur quasi
+        tempore laboriosam eius minus recusandae consectetur a corrupti eos, voluptates perspiciatis laborum? Beatae alias sit aliquid sint voluptas, atque, cumque totam vitae omnis ullam fuga velit.
+    </p>
+</body>
+
+</html>
