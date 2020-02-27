@@ -1,0 +1,107 @@
+/* default settings */
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* helper classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear-fix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* header section */
+
+#header {
+    background-color: #053365;
+    border-top: 4px solid #C33329;
+    position: relative;
+    padding: 10px 30px;
+}
+
+#header .logo {
+    width: 6%;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    position: absolute;
+    left: 20px;
+    top: 3px;
+}
+
+#header #main-navigation {
+    width: 65%;
+    margin-left: 8%;
+}
+
+#header #main-navigation ul li {
+    display: inline-block;
+}
+
+#header #main-navigation ul li a {
+    font-weight: 600;
+    padding: 5px 10px;
+    display: block;
+}
+
+#header #main-navigation ul li a:hover {
+    background-color: #40668C;
+    border-radius: 4px;
+}
+
+#header #main-navigation a,
+.user_section a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#header .user_section {
+    width: 20%;
+}
+
+#header .user_section ul li {
+    display: inline-block;
+}
