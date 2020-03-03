@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS 3 SELECTOR - * */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        #parent div {
+            height: 300px;
+            width: 50%;
+        }
+        
+        #parent::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        
+        .child1 {
+            background-color: red;
+            float: left;
+            padding: 10px;
+            border: 10px solid green;
+        }
+        
+        .child2 {
+            background-color: yellow;
+            float: right
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+    </div>
+</body>
+
+</html>
