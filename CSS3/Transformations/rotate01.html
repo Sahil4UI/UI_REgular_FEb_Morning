@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #frame {
+            height: 500px;
+            width: 250px;
+            /* border-image: url("https://3.imimg.com/data3/DP/PV/MY-9522511/grp-door-frame-500x500.jpg"); */
+            /* border-image: url('https://www.ikea.com/us/en/images/products/dalskaerr-frame__0556927_PE660629_S5.JPG') 20 round; */
+            /* border-image-width: 100px; */
+            border: 10px solid red;
+            margin: 0 auto;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+        
+        .door {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(32, 26, 17);
+            transition: 10s;
+            /* transform: rotatey(180deg); */
+            /* transform-origin: left; */
+            /* transform-origin: right; */
+            /* transform-origin: top; */
+            transform-origin: bottom;
+        }
+        
+        #frame:hover .door {
+            /* transform: rotatey(180deg); */
+            transform: rotateX(180deg);
+            /* transform-origin: left; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="frame">
+        <div class="door"></div>
+    </div>
+</body>
+
+</html>

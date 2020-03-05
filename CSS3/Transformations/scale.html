@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #board {
+            height: 300px;
+            width: 500px;
+            /* top,right,bottom,left */
+            margin: 100px auto 0 auto;
+            /* overflow: hidden; */
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            /* transition: 2s; */
+        }
+        
+        #board:hover img {
+            /* transform: scaleX(1.5); */
+            /* transform: scaleY(1.5); */
+            /* if value > 1 then we will zoomed in */
+            /* transform: scale(3, 3); */
+            transform: scale(0.2, 0.2);
+            transition: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="board">
+        <img src="https://assets-global.website-files.com/5ae17eb10974c57415c53e4b/5d92351e72a61a52938df9c2_Super%20Mario%20and%20the%2080%2020%20Principle_1b7b7d.png" alt="">
+    </div>
+</body>
+
+</html>
