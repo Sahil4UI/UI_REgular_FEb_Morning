@@ -1,0 +1,35 @@
+#products .products:nth-child(even) {
+    background-color: cyan;
+}
+
+#products .products:nth-child(odd) {
+    background-color: yellow;
+}
+
+#products .products {
+    height: 200px;
+    width: 20%;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    #products .products {
+        width: 33%;
+    }
+}
+
+@media (min-width:520px) and (max-width:767px) {
+    #products .products {
+        width: 50%;
+    }
+}
+
+@media (min-width:320px) and (max-width:520px) {
+    #products .products {
+        width: 100%;
+    }
+}

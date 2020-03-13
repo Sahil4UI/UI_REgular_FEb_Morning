@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: yellow;
+            padding: 0 50px;
+        }
+        
+        header .row {
+            justify-content: space-between;
+        }
+        
+        .logo {
+            padding-top: 20px;
+            width: 20%;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        aside {
+            width: 20%;
+            border: 2px solid red;
+            align-self: flex-start;
+        }
+        
+        main {
+            width: 60%;
+            border: 2px solid red;
+        }
+        
+        nav {
+            margin-top: 30px;
+            width: 60%;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            /* column-count: 6; */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav ul li {
+            text-align: center;
+        }
+        
+        @media (min-width:520px) and (max-width:768px) {
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <div class="row">
+                <div class="logo">
+                    <h1>LOGO</h1>
+                </div>
+                <nav id="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">MEN</a>
+                        </li>
+                        <li>
+                            <a href="#">WOMEN</a>
+                        </li>
+                        <li>
+                            <a href="#">KIDS</a>
+                        </li>
+                        <li>
+                            <a href="#">ELECTRONICS</a>
+                        </li>
+                        <li>
+                            <a href="#">MORE</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="content">
+            <div class="row">
+                <aside class="sidebar-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur tenetur facere quaerat magnam, id quae corporis neque, molestiae quibusdam necessitatibus omnis? Sequi pariatur harum saepe aliquam porro adipisci corrupti!
+                        Optio, eligendi. Dolorem accusantium excepturi sequi voluptatem temporibus dignissimos cumque sed ab magnam illum? Quod saepe nemo dolor inventore, veniam molestiae iste tenetur aliquid voluptates eligendi consequuntur, laboriosam
+                        perspiciatis quisquam. Sint vero non provident dignissimos, laborum iusto adipisci autem nobis aut. Itaque quia error iste numquam provident. Distinctio facere debitis impedit deserunt nisi deleniti aperiam aliquam, a velit tenetur
+                        perferendis.
+                    </p>
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m4.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error rem dignissimos distinctio blanditiis debitis natus consequuntur adipisci similique fugiat quis vero illum officiis a velit dicta, praesentium totam libero!Esse voluptates sunt consectetur
+                        voluptas optio corrupti numquam facilis eius sit eum pariatur a, incidunt veritatis! Quis asperiores molestiae quisquam assumenda voluptatum fuga nulla reiciendis consectetur illum, voluptates at nobis.
+                    </p>
+                </aside>
+                <main>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur tenetur facere quaerat magnam, id quae corporis neque, molestiae quibusdam necessitatibus omnis? Sequi pariatur harum saepe aliquam porro adipisci corrupti!
+                        Optio, eligendi. Dolorem accusantium excepturi sequi voluptatem temporibus dignissimos cumque sed ab magnam illum? Quod saepe nemo dolor inventore, veniam molestiae iste tenetur aliquid voluptates eligendi consequuntur, laboriosam
+                        perspiciatis quisquam. Sint vero non provident dignissimos, laborum iusto adipisci autem nobis aut. Itaque quia error iste numquam provident. Distinctio facere debitis impedit deserunt nisi deleniti aperiam aliquam, a velit tenetur
+                        perferendis.
+                    </p>
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m4.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error rem dignissimos distinctio blanditiis debitis natus consequuntur adipisci similique fugiat quis vero illum officiis a velit dicta, praesentium totam libero!Esse voluptates sunt consectetur
+                        voluptas optio corrupti numquam facilis eius sit eum pariatur a, incidunt veritatis! Quis asperiores molestiae quisquam assumenda voluptatum fuga nulla reiciendis consectetur illum, voluptates at nobis.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur tenetur facere quaerat magnam, id quae corporis neque, molestiae quibusdam necessitatibus omnis? Sequi pariatur harum saepe aliquam porro adipisci corrupti!
+                        Optio, eligendi. Dolorem accusantium excepturi sequi voluptatem temporibus dignissimos cumque sed ab magnam illum? Quod saepe nemo dolor inventore, veniam molestiae iste tenetur aliquid voluptates eligendi consequuntur, laboriosam
+                        perspiciatis quisquam. Sint vero non provident dignissimos, laborum iusto adipisci autem nobis aut. Itaque quia error iste numquam provident. Distinctio facere debitis impedit deserunt nisi deleniti aperiam aliquam, a velit tenetur
+                        perferendis.
+                    </p>
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m4.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error rem dignissimos distinctio blanditiis debitis natus consequuntur adipisci similique fugiat quis vero illum officiis a velit dicta, praesentium totam libero!Esse voluptates sunt consectetur
+                        voluptas optio corrupti numquam facilis eius sit eum pariatur a, incidunt veritatis! Quis asperiores molestiae quisquam assumenda voluptatum fuga nulla reiciendis consectetur illum, voluptates at nobis.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur tenetur facere quaerat magnam, id quae corporis neque, molestiae quibusdam necessitatibus omnis? Sequi pariatur harum saepe aliquam porro adipisci corrupti!
+                        Optio, eligendi. Dolorem accusantium excepturi sequi voluptatem temporibus dignissimos cumque sed ab magnam illum? Quod saepe nemo dolor inventore, veniam molestiae iste tenetur aliquid voluptates eligendi consequuntur, laboriosam
+                        perspiciatis quisquam. Sint vero non provident dignissimos, laborum iusto adipisci autem nobis aut. Itaque quia error iste numquam provident. Distinctio facere debitis impedit deserunt nisi deleniti aperiam aliquam, a velit tenetur
+                        perferendis.
+                    </p>
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m4.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error rem dignissimos distinctio blanditiis debitis natus consequuntur adipisci similique fugiat quis vero illum officiis a velit dicta, praesentium totam libero!Esse voluptates sunt consectetur
+                        voluptas optio corrupti numquam facilis eius sit eum pariatur a, incidunt veritatis! Quis asperiores molestiae quisquam assumenda voluptatum fuga nulla reiciendis consectetur illum, voluptates at nobis.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur tenetur facere quaerat magnam, id quae corporis neque, molestiae quibusdam necessitatibus omnis? Sequi pariatur harum saepe aliquam porro adipisci corrupti!
+                        Optio, eligendi. Dolorem accusantium excepturi sequi voluptatem temporibus dignissimos cumque sed ab magnam illum? Quod saepe nemo dolor inventore, veniam molestiae iste tenetur aliquid voluptates eligendi consequuntur, laboriosam
+                        perspiciatis quisquam. Sint vero non provident dignissimos, laborum iusto adipisci autem nobis aut. Itaque quia error iste numquam provident. Distinctio facere debitis impedit deserunt nisi deleniti aperiam aliquam, a velit tenetur
+                        perferendis.
+                    </p>
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m4.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error rem dignissimos distinctio blanditiis debitis natus consequuntur adipisci similique fugiat quis vero illum officiis a velit dicta, praesentium totam libero!Esse voluptates sunt consectetur
+                        voluptas optio corrupti numquam facilis eius sit eum pariatur a, incidunt veritatis! Quis asperiores molestiae quisquam assumenda voluptatum fuga nulla reiciendis consectetur illum, voluptates at nobis.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur tenetur facere quaerat magnam, id quae corporis neque, molestiae quibusdam necessitatibus omnis? Sequi pariatur harum saepe aliquam porro adipisci corrupti!
+                        Optio, eligendi. Dolorem accusantium excepturi sequi voluptatem temporibus dignissimos cumque sed ab magnam illum? Quod saepe nemo dolor inventore, veniam molestiae iste tenetur aliquid voluptates eligendi consequuntur, laboriosam
+                        perspiciatis quisquam. Sint vero non provident dignissimos, laborum iusto adipisci autem nobis aut. Itaque quia error iste numquam provident. Distinctio facere debitis impedit deserunt nisi deleniti aperiam aliquam, a velit tenetur
+                        perferendis.
+                    </p>
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m4.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error rem dignissimos distinctio blanditiis debitis natus consequuntur adipisci similique fugiat quis vero illum officiis a velit dicta, praesentium totam libero!Esse voluptates sunt consectetur
+                        voluptas optio corrupti numquam facilis eius sit eum pariatur a, incidunt veritatis! Quis asperiores molestiae quisquam assumenda voluptatum fuga nulla reiciendis consectetur illum, voluptates at nobis.
+                    </p>
+                </main>
+                <aside class="sidebar-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur tenetur facere quaerat magnam, id quae corporis neque, molestiae quibusdam necessitatibus omnis? Sequi pariatur harum saepe aliquam porro adipisci corrupti!
+                        Optio, eligendi. Dolorem accusantium excepturi sequi voluptatem temporibus dignissimos cumque sed ab magnam illum? Quod saepe nemo dolor inventore, veniam molestiae iste tenetur aliquid voluptates eligendi consequuntur, laboriosam
+                        perspiciatis quisquam. Sint vero non provident dignissimos, laborum iusto adipisci autem nobis aut. Itaque quia error iste numquam provident. Distinctio facere debitis impedit deserunt nisi deleniti aperiam aliquam, a velit tenetur
+                        perferendis.
+                    </p>
+                    <img src="https://demo.w3layouts.com/demos_new/template_demo/28-08-2018/electro_store-demo_Free/1204782700/web/images/m4.jpg" alt="">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas error rem dignissimos distinctio blanditiis debitis natus consequuntur adipisci similique fugiat quis vero illum officiis a velit dicta, praesentium totam libero!Esse voluptates sunt consectetur
+                        voluptas optio corrupti numquam facilis eius sit eum pariatur a, incidunt veritatis! Quis asperiores molestiae quisquam assumenda voluptatum fuga nulla reiciendis consectetur illum, voluptates at nobis.
+                    </p>
+                </aside>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
