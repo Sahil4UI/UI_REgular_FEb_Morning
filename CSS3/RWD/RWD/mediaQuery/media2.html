@@ -17,6 +17,7 @@
         header {
             background-color: yellow;
             padding: 0 50px;
+            position: relative;
         }
         
         header .row {
@@ -75,10 +76,79 @@
             text-align: center;
         }
         
-        @media (min-width:520px) and (max-width:768px) {
+        #hamburger_menu {
+            height: 70px;
+            width: 80px;
+            background-color: #FFF;
+            padding: 10px;
+            border: 1px solid #000;
+            margin-top: 5px;
+            display: none;
+            border-radius: 10px;
+        }
+        
+        #hamburger_menu span {
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: #000;
+            margin: 10px 0;
+        }
+        
+        @media (min-width:320px) and (max-width:768px) {
             nav {
                 display: none;
+                position: absolute;
+                background-color: #000;
+                width: 100%;
+                left: 0;
+                top: 50px;
+                padding: 14px;
             }
+            nav ul li {
+                text-align: left;
+                margin: 8px 0;
+            }
+            nav ul li a {
+                color: #fff;
+                /* display: block; */
+            }
+            nav ul {
+                display: block;
+            }
+            #hamburger_menu {
+                display: block;
+            }
+            #checkbtn:checked~#main-navigation {
+                display: block;
+            }
+            #hamburger_menu span {
+                transition: 2s;
+            }
+            #checkbtn:checked~#hamburger_menu span:first-child {
+                transform: rotateZ(45deg);
+                margin-top: 25px;
+            }
+            #checkbtn:checked~#hamburger_menu span:nth-child(2) {
+                transform: translateX(150px);
+            }
+            #checkbtn:checked~#hamburger_menu span:last-child {
+                transform: rotateZ(-45deg);
+                margin-top: -27px;
+            }
+        }
+        
+        #checkbtn,
+        #hamburger_menu {
+            position: absolute;
+            right: 5%;
+        }
+        
+        #checkbtn {
+            height: 70px;
+            width: 80px;
+            z-index: 100;
+            opacity: 0;
         }
     </style>
 </head>
@@ -91,6 +161,7 @@
                 <div class="logo">
                     <h1>LOGO</h1>
                 </div>
+                <input type="checkbox" id="checkbtn">
                 <nav id="main-navigation">
                     <ul>
                         <li>
@@ -113,6 +184,12 @@
                         </li>
                     </ul>
                 </nav>
+
+                <div id="hamburger_menu">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
             </div>
         </header>
         <div id="content">
