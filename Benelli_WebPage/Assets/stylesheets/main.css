@@ -5,6 +5,10 @@
         /* font-family: myriad-pro-condensed, sans-serif; */
     }
     
+    * {
+        box-sizing: border-box;
+    }
+    
     a:hover {
         text-decoration: none;
     }
@@ -78,4 +82,75 @@
     .country i {
         color: #888888;
         margin-left: 5px;
+    }
+    /* media updates */
+    
+    #mediaupdates .mediaupdate1 {
+        background-image: url("https://49f44b141764baa2639d-7ed4c224bc1671c64dae8740f0861232.ssl.cf6.rackcdn.com/news/39-1472262475e6b26b4594283.80803044.jpg");
+    }
+    
+    #mediaupdates .mediaupdate2 {
+        background-image: url("https://49f44b141764baa2639d-7ed4c224bc1671c64dae8740f0861232.ssl.cf6.rackcdn.com/news/39-15780066855e75b2887ecd67.01097620.jpg");
+    }
+    
+    #mediaupdates .mediaupdate3 {
+        background-image: url("https://49f44b141764baa2639d-7ed4c224bc1671c64dae8740f0861232.ssl.cf6.rackcdn.com/news/39-17946905135e5f56d5b71bc7.91092165.jpg");
+    }
+    
+    #mediaupdates .mediaupdate4 {
+        background-image: url("https://49f44b141764baa2639d-7ed4c224bc1671c64dae8740f0861232.ssl.cf6.rackcdn.com/news/39-4581508085daac93a512734.33575589.PNG");
+    }
+    
+    #mediaupdates .mediaupdate5 {
+        background-image: url("https://49f44b141764baa2639d-7ed4c224bc1671c64dae8740f0861232.ssl.cf6.rackcdn.com/news/39-1258511775daac6b450fac0.82676530.jpg");
+    }
+    
+    #mediaupdates .mediaupdate6 {
+        background-image: url("https://49f44b141764baa2639d-7ed4c224bc1671c64dae8740f0861232.ssl.cf6.rackcdn.com/news/39-10071389545da1900b3a9772.35831388.PNG");
+    }
+    
+    #mediaupdates .media {
+        background-size: 100% 100%;
+        height: 300px;
+        position: relative;
+        margin: 0;
+        padding: 0!important;
+        transition: 3s;
+    }
+    
+    #mediaupdates .mediaupdatelayer {
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        display: none;
+        transition: 2s;
+    }
+    
+    #mediaupdates .media:hover {
+        background-size: 105% 105%;
+    }
+    
+    #mediaupdates .media:hover .mediaupdatelayer {
+        display: block;
+    }
+    
+    #mediaupdates .mediaupdatelayer p {
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        display: block;
+    }
+    
+    #mediaupdates .viewbutton {
+        display: inline!important;
+        border: 2px solid #fff;
+        padding: 12px 18px;
+        color: #fff;
+    }
+    
+    #mediaupdates .viewbutton:hover {
+        background-color: #fff;
+        color: #000;
     }
