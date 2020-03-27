@@ -154,3 +154,12 @@
         background-color: #fff;
         color: #000;
     }
+    
+    #tc {
+        border: 4px dashed #000;
+        width: 500px;
+        height: 600px;
+        margin: 0 auto;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
