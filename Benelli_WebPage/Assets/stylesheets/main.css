@@ -39,6 +39,7 @@
     #header {
         background-color: #191919;
         padding: 0px 45px;
+        /* position: relative; */
     }
     
     #main-navigation ul li {
@@ -70,7 +71,7 @@
     }
     
     #main-navigation {
-        width: 70%;
+        width: 76%;
         margin-left: -6%;
     }
     
@@ -154,12 +155,113 @@
         background-color: #fff;
         color: #000;
     }
-    
-    #tc {
-        border: 4px dashed #000;
-        width: 500px;
-        height: 600px;
-        margin: 0 auto;
-        overflow: hidden;
-        overflow-y: scroll;
+    #models .card1{
+        height:500px;
+        /* RITIKA width  */
+        width:470px; 
+        padding:0 !important;
+        margin:0 !important;
+    }
+
+    .card1 .cardtext1  a{
+        color : black;
+        font-size:18px;
+        
+        font-family:  'myriad-pro-condensed', 'Arial', sans-serif;
+        display:block;
+        width:100%;
+    }
+    .card1 .cardtext1{
+        margin:30px 20px;
+    }
+    .card1 .cardtext1  .last-links{
+        margin:50px 0;
+        
+    }
+    .card1 .cardtext1 .last-links a{
+        color:green;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .card1 .cardtext1 .last-links a:hover{
+        color:darkgreen;
+    }
+    #models .card1 a img{
+        width:100%;
+        height:300px;
+    }
+    .card1 .cardtext1 .abold{
+        font-weight: 1000;
+    }
+    .abold a:hover{
+        text-decoration: underline;
+    }
+    .card1:hover{
+        transform: scale(1.03);
+        transition: 1s;
+        /* RITIKA box shadow */
+        /* border: 1px solid; */
+        /* padding: 10px; */
+        box-shadow: 5px 10px rgba(0,0,0,0.2);
+    }
+    #hamburger{
+        height:60px;
+        width:60px;
+        padding:2px;
+        display: none;
+        background-color: #191919;
+    }
+    #hamburger .line{
+        background-color: #fff;
+        width:100%;
+        height:4px;
+        margin:10px 0;
+        display: block;
+    }
+    input[type="checkbox"]
+    {
+        position: absolute;
+        display:none;
+        height:60px;
+        width:60px;
+    }
+    @media (max-width:1200px)
+    {
+        #hamburger,input[type="checkbox"]{
+            display:block;
+        }
+        input[type="checkbox"]{
+            opacity: 0;
+        }
+        input[type="checkbox"]:checked ~ #main-navigation{
+            display: block;
+
+        }
+
+        #main-navigation{
+            position: absolute;
+            z-index:1000;
+            background-color: rgba(255, 255, 255, 0.8);
+            left:0;
+            top:50px;
+            width:100%;
+            margin:0;
+            display: none;
+        }
+        #main-navigation ul{
+display: block;
+        }
+        #main-navigation ul li  a{
+            /* display: block; */
+            color:#000!important;
+                    }
+                    #main-navigation ul li{
+                        text-align: center;
+                    }
+      .country{
+          display: none;
+      }
+      .logo{
+          margin:0 auto;
+      }
     }
