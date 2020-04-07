@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            
+        }
+        
+        img{
+            width:50%;
+
+        }
+        section{
+            display: flex;
+        }
+        .img-1{
+            transition: 1s;
+            transform:translateX(-120%);
+        }
+        .img-2{
+            transition: 1s;
+            transform:translateX(120%);
+        }
+        .active .img-1,.active .img-2{
+            transform: translate(0%,0%);
+        }
+    </style>
+</head>
+<body>
+    <h1>SCROLL EVENT</h1>
+    <div id="content">
+        <section id="sec_1"><img src="https://i.pinimg.com/originals/6d/6c/94/6d6c9442f273a32b71741879ad7b68b3.jpg" alt="" class="img-1">
+            <img src="https://i.ytimg.com/vi/wy2DgqL1P7s/maxresdefault.jpg" alt="" class="img-2"></section>
+        <section id="sec_2"><img src="https://s1.dmcdn.net/v/LEO9s1PXWZlJVSczJ/x1080" alt="" class="img-1">
+            <img src="https://i.ytimg.com/vi/wy2DgqL1P7s/maxresdefault.jpg" alt="" class="img-2"></section>
+        <section id="sec_3"><img src="https://s1.dmcdn.net/v/LEO9s1PXWZlJVSczJ/x1080" alt="" class="img-1">
+            <img src="https://i.ytimg.com/vi/wy2DgqL1P7s/maxresdefault.jpg" alt="" class="img-2"></section>
+        <section id="sec_4"><img src="https://s1.dmcdn.net/v/LEO9s1PXWZlJVSczJ/x1080" alt="" class="img-1">
+            <img src="https://i.ytimg.com/vi/wy2DgqL1P7s/maxresdefault.jpg" alt="" class="img-2"></section>
+        <section id="sec_5"><img src="https://s1.dmcdn.net/v/LEO9s1PXWZlJVSczJ/x1080" alt="" class="img-1">
+            <img src="https://i.ytimg.com/vi/wy2DgqL1P7s/maxresdefault.jpg" alt="" class="img-2"></section>
+    </div>
+    <script>
+        var div_1 = document.querySelector("#sec_1");
+        var div_2 = document.querySelector("#sec_2");
+        window.addEventListener("load",function()
+        {
+            div_1.className = 'active';
+        })
+        window.addEventListener("scroll",function()
+        {
+            var scrolly = window.scrollY;
+            var divScroll = scrollY - div_2.offsetTop;
+            console.log(divScroll);
+            if (divScroll > -400)
+            {
+                div_2.className="active"
+            }
+            else{
+                div_2.className="";
+            }
+        })
+    </script>
+</body>
+</html>

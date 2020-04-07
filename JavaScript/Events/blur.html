@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Blur Event</h1>
+    <input type="text" name="" id="" placeholder="Enter Name" >
+    <span class="res"></span>
+
+    <script>
+        document.querySelector("input").addEventListener("blur",show);
+
+        function show()
+        {
+         console.log("function called");
+      var userName= document.querySelector("input");
+            var span = document.querySelector(".res");
+      if (userName.value.length ==0 || userName.value == "")
+      {
+          span.innerText = "please Enter your name";
+          userName.style.border = "2px solid red";
+      }      
+         else
+         {
+             span.innerText="";
+             userName.style.border="2px solid green";
+
+         }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width:150%;
+            max-height: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1>MOUSE MOVE</h1> -->
+    <div id="banner">
+        <img src="https://i.pinimg.com/originals/6d/6c/94/6d6c9442f273a32b71741879ad7b68b3.jpg" alt="">
+    </div>
+<script>
+    var banner = document.querySelector("#banner");
+    banner.addEventListener("mousemove",animate);
+    function animate()
+    {
+        var mouseX = event.clientX;
+        var mouseY = event.clientY;
+        banner.style.transform = "translate("+(mouseX*0.2)+"px,"+(mouseY*0.2)+"px)" ;
+
+    }
+</script>
+</body>
+</html>
