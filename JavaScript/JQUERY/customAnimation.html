@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="effects.js"></script>
+    <style>
+        img{
+            position: absolute;
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQUERY EFFECTS</h1>
+    <button>Animate</button>
+<hr>
+    <img src="https://www.denofgeek.com/wp-content/uploads/2019/10/header_main_image_2.jpg?resize=768%2C432" alt="">
+
+    <script>
+        var img = $("img");
+        $("button").click(function()
+        {
+            img.animate({
+                "left":'300px',
+                
+                "opacity":"0.5"
+            },1000);
+            img.animate({
+                "left":'300px',
+                "top":'400px',
+                "opacity":"0.5"
+            },1000);
+            img.animate({
+                "left":'0px',
+                "top":'400px',
+                "opacity":"0.5"
+            },1000);
+            img.animate({
+                "left":'0px',
+                "top":'200px',
+                "opacity":"0.5"
+            },1000);
+        })
+    </script>
+</body>
+</html>
