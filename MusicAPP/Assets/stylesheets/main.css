@@ -10,4 +10,27 @@ ul{
 font-size: 20px;
 font-weight: 600;
 
+
+}
+.songs{
+    padding-right:10px;
+    border-right:1px solid #000;
+}
+#songsList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#songsList  li{
+    width:33%;
+    border:1px solid #000;
+    padding:10px;
+    margin:auto;
+    border-radius: 12px;
+}
+#songsList img{
+    width:100%;
+}
+#songsList img,span{
+    pointer-events: none;
 }

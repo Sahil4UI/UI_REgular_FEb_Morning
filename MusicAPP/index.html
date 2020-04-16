@@ -9,6 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="Assets/BT/js/bootstrap.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/cd00034d8b.js" crossorigin="anonymous"></script>
     <!-- linking our main css -->
     <link rel="stylesheet" href="Assets/stylesheets/main.css">
     <script src="Assets/JS/songs.js"></script>
@@ -55,15 +57,44 @@
         </header>
         <div id="musicPlayer">
             <div class="container">
-                <audio  id="audio"  src="" controls></audio>
+                <h4>Current Song <span id="cur_song"></span></h4>
+                <button id="prev" class="btn btn-danger">
+                      <i class="fas fa-angle-double-left"></i>
+                </button>
+                <button id="play" class="btn btn-danger">
+                  <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="btn btn-danger">
+                      <i class="fas fa-angle-double-right"></i>
+            </button>
+            <span class="song_curr_time">00:00</span>
+            
+                <audio  id="audio"  src=""></audio>
+                <input type="range" value="0" id="slider">
+                <span class="song_total_time">00:00</span>
             </div>
         </div>
         <div id="content">
             <div class="container-fluid">
-                <div class="songs">
-                    <ul id="songsList" class="row justify-content-between">
+                <div class="row">
+                  <div class="col-md-9">
+                      <div class="songs">
+                        <div class="songs">
+                          <h2>Featured Songs</h2>
+                          <ul id="songsList">
 
-                    </ul>
+                          </ul>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-md-3">
+                  <h2>PlayList</h2>
+                  <ul id="playList">
+                    
+                  </ul>
+                </div>
+                
                 </div>
             </div>
         </div>
