@@ -10,6 +10,9 @@ function initEvents()
     song_total_time = document.querySelector(".song_total_time");
     song_curr_time = document.querySelector(".song_curr_time");
     loadSongs();
+    loadPlayList();
+    
+
 
 }
 
@@ -93,5 +96,73 @@ function togglePlay()
 
 function addSong()
 {
+    var s_id = event.srcElement.parentElement.title;
+    for(var i=0;i<songs.length;i++)
+    {
+       if(songs[i].song_id == s_id)
+       {
+        var songObj = songs[i];
+        obj.addSong(songObj.song_id,songObj.song_name,songObj.song_url,songObj.song_thumb);
+        break;
+       }
+    }
+    printSongs();
+    savePlayList();
+}
+function savePlayList()
+{
+    if(window.localStorage)
+    {
+        var json = JSON.stringify(obj.playList);
+        localStorage.setItem("playList",json);
+    }
+}
+function loadPlayList()
+{
+    if (window.localStorage)
+    {
+        var arr = localStorage.getItem("playList");
+        obj.playList = JSON.parse(arr);
+        printSongs();
+    }
+}
+function printSongs()
+{
+    var ul = document.querySelector("#playList");
+    ul.innerHTML = "";
+    obj.playList.forEach(function(obj){
+        var li = document.createElement("li");
+        var span = document.createElement("span");
+        span.innerHTML = obj.name;
+        var btn = document.createElement("button");
+        btn.innerHTML = '<i class="fas fa-trash"></i>';
+        btn.className = "btn btn-primary deletebtn";
+        var img = document.createElement("img");
+        img.setAttribute('src',obj.image);
+        li.setAttribute('title',obj.id);
+        li.appendChild(img);
+        li.appendChild(span);
+        li.appendChild(btn);
+        ul.appendChild(li);
+        img.addEventListener('click',playSong);
+        btn.addEventListener("click",deleteSong);
+    })
+    
+}
 
+function deleteSong()
+{
+    var s_id = event.srcElement.parentElement.title;
+    for (var i =0;i<obj.playList.length;i++)
+    {
+        if(obj.playList[i].id == s_id)
+        {
+            var songObj = obj.playList[i];
+            obj.deleteSong(songObj.id);
+            break;
+
+        }
+    }
+    printSongs();
+    savePlayList();
 }

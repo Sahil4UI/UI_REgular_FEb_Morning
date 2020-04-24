@@ -34,3 +34,26 @@ font-weight: 600;
 #songsList img,span{
     pointer-events: none;
 }
+#playList{
+    text-align: left;
+    position: fixed;
+    top:200;
+    /* width:25%; */
+    height:50%;
+    overflow-y: scroll;
+    padding:10px;
+
+}
+#playList li img
+{
+    width:25%;
+    height:40px;
+}
+#playList span{
+    margin:20px;
+    display: inline-block;
+    width:150px;
+}
+.deletebtn i{
+pointer-events: none;
+}
